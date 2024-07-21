@@ -30,18 +30,18 @@
             position: absolute;
             top: 0px;
         }
-        .nav {
+        .topbar ul {
             color: white;
             margin: 10px;
             padding: 10px;
             display: flex;
             list-style: none;
         }
-        .nav li {
+        .topbar ul li {
             flex:1;
             overflow: clip;
         }
-        .nav a {
+        .topbar ul a {
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -49,8 +49,34 @@
             display: block;
         }
 
-        .nav a:hover{
+        .topbar ul a:hover{
             scale: 1.3;
+        }
+        .about-me {
+            text-align: center;
+            padding: 10px;
+            background-color: #7504a5;
+            color: #c3c3c3;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 220px auto;
+            max-width: 500px;
+            text-decoration: none;
+        }
+        .about-me h1{
+            color: white;
+            word-spacing: 5px;
+        }
+        .about-me a {
+            display: inline-block;
+            transition: all 300ms;
+        }
+        .about-me a:hover{
+            scale: 1.2;
+            color: #ff03ea;
+        }
+        .about-me .about-me-desc {
+            font-size: 1.2em;
         }
         
     </style>
@@ -61,11 +87,23 @@
         <a href="index.html">
             <img id="main-logo" src="images/dawwa-logo.png" alt="logo">
         </a>
-        <ul class="nav">
+        <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="https://github.com/Dawwa1">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="about-me">
+        <h1>I Am <a>Dawwa</a></h1>
+        <div class="about-me-desc">
+            <p>I am a hobbyist developer</p>
+            <p>
+                I love to learn new things and tinker with computers.<br>
+                This website is my venture into my journey of learning web development.
+            </p>
+            
+        </div>
+    </div>
 </body>
 </html>
